@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<title>はじめてのVue.js</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="fruits-counter">
+  <div v-for="fruit in fruits">
+    {{fruit.name}}: <counter-button v-on:increment="incrementCartStatus()"></counter-button>
+  </div>
+  <p>合計: {{total}}</p>
+</div>
+<script src="app2.js"></script>
