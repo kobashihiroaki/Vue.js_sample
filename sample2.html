@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<title>はじめてのVue.js</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <div id=app>
+    <item-desc v-bind:item-name='myItem'></item-desc>
+  </div>
+<script>
+  Vue.component('item-desc', {
+    props: {
+      itemName: {
+        type: String
+      }
+    },
+    template: '<p>{{ itemName }}は便利です。</p>'
+  })
+  new Vue({
+    el: '#app',
+    data: { myItem: 'pen'}
+  })
+</script>

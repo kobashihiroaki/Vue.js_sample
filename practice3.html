@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<title>はじめてのVue.js</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<div id="app">
+  <simple-counter></simple-counter>
+</div>
+<script>
+  Vue.component('simple-counter', {
+    template: '<h1>フルーツ一覧</h1>',
+    data: function () {
+      return {
+        fruits: ['りんご', 'みかん']
+      }
+    }
+  })
+  new Vue({el: '#app'})
+</script>
